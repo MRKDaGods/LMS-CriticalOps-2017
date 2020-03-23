@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64B585C5-EC7C-4E31-845A-41C7F697D3BD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMS_CriticalOps_2017</RootNamespace>
+    <AssemblyName>LMS CriticalOps 2017</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="uLink">
+      <HintPath>Plugins\uLink.dll</HintPath>
+    </Reference>
+    <Reference Include="uLobbyClient">
+      <HintPath>Plugins\uLobbyClient.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\..\Program Files\Unity\5.4.4f1\Editor\Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChromaTest.cs" />
+    <Compile Include="ExternalCOPSHaXHook.cs" />
+    <Compile Include="GL_Canvas.cs" />
+    <Compile Include="IJsonWrapper.cs" />
+    <Compile Include="JsonData.cs" />
+    <Compile Include="JsonException.cs" />
+    <Compile Include="JsonMapper.cs" />
+    <Compile Include="JsonReader.cs" />
+    <Compile Include="JsonWriter.cs" />
+    <Compile Include="KeyValuePairUtil.cs" />
+    <Compile Include="Lexer.cs" />
+    <Compile Include="LMS.cs" />
+    <Compile Include="LMSTexCreator.cs" />
+    <Compile Include="LMS_BlackSchemedGui.cs" />
+    <Compile Include="LMS_Chat.cs" />
+    <Compile Include="LMS_ColorThread.cs" />
+    <Compile Include="LMS_CustomExecutor.cs" />
+    <Compile Include="LMS_DoubleBuffer.cs" />
+    <Compile Include="LMS_FontSelector.cs" />
+    <Compile Include="LMS_FontSelectorScreen.cs" />
+    <Compile Include="LMS_FPS.cs" />
+    <Compile Include="LMS_GuiAutoRect.cs" />
+    <Compile Include="LMS_GuiBaseBox2D.cs" />
+    <Compile Include="LMS_GuiBaseButton.cs" />
+    <Compile Include="LMS_GuiBaseButtonUtil.cs" />
+    <Compile Include="LMS_GuiBaseCallback.cs" />
+    <Compile Include="LMS_GuiBaseLabel.cs" />
+    <Compile Include="LMS_GuiBaseLabelBoundaries.cs" />
+    <Compile Include="LMS_GuiBaseLayout.cs" />
+    <Compile Include="LMS_GuiBaseOverlay.cs" />
+    <Compile Include="LMS_GuiBaseOverlayLeftBar.cs" />
+    <Compile Include="LMS_GuiBaseProgressBar.cs" />
+    <Compile Include="LMS_GuiBaseTextField.cs" />
+    <Compile Include="LMS_GuiBaseToggle.cs" />
+    <Compile Include="LMS_GuiBaseTouchBar.cs" />
+    <Compile Include="LMS_GuiBaseUtils.cs" />
+    <Compile Include="LMS_GuiBaseVerticalScroller.cs" />
+    <Compile Include="LMS_GuiConfig.cs" />
+    <Compile Include="LMS_GuiEditor.cs" />
+    <Compile Include="LMS_GuiParser.cs" />
+    <Compile Include="LMS_GuiPopup.cs" />
+    <Compile Include="LMS_GuiPopupConfirmationPopup.cs" />
+    <Compile Include="LMS_GuiPopupDarkConfirmationPopup.cs" />
+    <Compile Include="LMS_GuiPopupDarkMessageBox.cs" />
+    <Compile Include="LMS_GuiPopupMessageBox.cs" />
+    <Compile Include="LMS_GuiRenderer.cs" />
+    <Compile Include="LMS_GuiScreen.cs" />
+    <Compile Include="LMS_GuiScreenAuthentication.cs" />
+    <Compile Include="LMS_GuiScreenAutomation.cs" />
+    <Compile Include="LMS_GuiScreenDarkAuthentication.cs" />
+    <Compile Include="LMS_GuiScreenDarkAutomation.cs" />
+    <Compile Include="LMS_GuiScreenDarkMainMenu.cs" />
+    <Compile Include="LMS_GuiScreenESP.cs" />
+    <Compile Include="LMS_GuiScreenMainMenu.cs" />
+    <Compile Include="LMS_GuiScreenMisc.cs" />
+    <Compile Include="LMS_GuiScreenThemes.cs" />
+    <Compile Include="LMS_GuiTexureLoader.cs" />
+    <Compile Include="LMS_GuiView.cs" />
+    <Compile Include="LMS_GuiViewDetail.cs" />
+    <Compile Include="LMS_GuiViewSelection.cs" />
+    <Compile Include="LMS_Main.cs" />
+    <Compile Include="LMS_MainThread.cs" />
+    <Compile Include="LMS_Meta.cs" />
+    <Compile Include="LMS_ModifiedTexture.cs" />
+    <Compile Include="LMS_OnProgressBarFull.cs" />
+    <Compile Include="LMS_ScreenInitializer.cs" />
+    <Compile Include="LMS_SessionServerPeer.cs" />
+    <Compile Include="LMS_TaskManager.cs" />
+    <Compile Include="LMS_Textures.cs" />
+    <Compile Include="Logger.cs" />
+    <Compile Include="LRenderer.cs" />
+    <Compile Include="ParserToken.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuadValPair.cs" />
+    <Compile Include="SimpleDesign.cs" />
+    <Compile Include="TextureGrabber.cs" />
+    <Compile Include="TripleValPair.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
