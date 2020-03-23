@@ -9,7 +9,7 @@ public class LMS_SessionServerPeer : MonoBehaviour
     static LMS_SessionServerPeer ms_Instance;
     LocalPeer m_LocalPeer;
     public static LMS_SessionServerPeer Instance;
-    const string IP = "138.201.6.155:25545";//"83.98.229.152:25545";
+    const string IP = "127.0.0.1:23466";
     bool packetlooprunning;
     LMS_Chat m_Chat;
     float m_LastAuthenticationTime;
